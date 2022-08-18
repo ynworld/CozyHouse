@@ -17,6 +17,17 @@ html {
 
 /* VARIABLES */
 :root {
+  --font-main: "Tinos", serif;
+  --font-text: "PT Sans", sans-serif;
+
+  --color-primary: #f1cdb3;
+  --color-primary-light: #fddcc4;
+  --color-grey-light-1: #fafafa;
+  --color-grey-light-2: #cdcdcd;
+
+  --color-grey-dark-1: #545454;
+  --color-grey-dark-2: #4c4c4c;
+  --color-grey-dark-3: #292929;
 }
 
 /* GENERAL STYLES */
@@ -25,7 +36,111 @@ html {
   margin: 0 auto;
 }
 
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5 {
+  font-family: var(--font-main);
+  font-weight: 400;
+}
+
 /* SECTION HERO */
 .hero {
   background: url(../../assets/images/start-screen-background.jpg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.logo__title {
+  margin: 0;
+  line-height: 1;
+  font-size: 3.2rem;
+  color: var(--color-primary);
+}
+
+.logo__sub-title {
+  font-family: var(--font-text);
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  padding: .5rem 0;
+  text-decoration: none;
+  color: var(--color-grey-light-2);
+  font-size: 1.5rem;
+  font-family: var(--font-text);
+}
+
+.nav__link:hover,
+.nav__link:active,
+.nav__link--active {
+  var(--color-grey-light-1);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.hero__container {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+}
+
+.hero__text-block {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4rem;
+  flex-basis: 30%;
+}
+
+.hero__title {
+  font-size: 4.4rem;
+  color: #fff;
+}
+
+.hero__text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: var(--font-text);
+  color: var(--color-grey-light-2);
+}
+
+.hero__button {
+  border: none;
+  border-radius: 100px;
+  background-color: var(--color-primary);
+  padding: 1.5rem 4.5rem;
+  font-size: 1.7rem;
+  color: var(--color-grey-dark-3);
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  background-color: var(--color-primary-light);
+}
+
+.hero__image {
+  display: block;
 }
