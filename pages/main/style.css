@@ -62,8 +62,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem;
-  margin-bottom: 4rem;
+  padding: 6rem 4rem;
 }
 
 .logo {
@@ -80,7 +79,7 @@ body {
 
 .logo__title {
   margin: 0;
-  line-height: 1;
+  line-height: 1.1;
   font-size: 3.2rem;
   color: var(--color-primary);
 }
@@ -88,6 +87,7 @@ body {
 .logo__sub-title {
   font-family: var(--font-text);
   font-size: 1.2rem;
+  line-height: 1.25;
   color: #fff;
   letter-spacing: 1px;
 }
@@ -130,7 +130,7 @@ body {
 }
 
 .hero__text-block {
-  max-width: 46rem;
+  max-width: 45rem;
   align-self: center;
   display: flex;
   flex-direction: column;
