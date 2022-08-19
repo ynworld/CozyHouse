@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../assets/styles/normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -14,6 +21,44 @@
     <title>Cozy House | Shelter for pets in Boston</title>
   </head>
   <body>
+    <div class="hero section-container">
+      <header class="header">
+        <a href="#" class="logo">
+          <h1 class="logo__title heading-1">Cozy House</h1>
+          <p class="logo__sub-title">Shelter for pets in Boston</p>
+        </a>
+        <ul class="nav">
+          <li class="nav__item">
+            <div class="nav__link--active">About the shelter</div>
+          </li>
+          <li class="nav__item">
+            <a href="../pets/" class="nav__link">Our pets</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Help the shelter</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+        </ul>
+      </header>
+      <div class="hero__container">
+        <div class="hero__text-block">
+          <h2 class="hero__title heading-2">Not only people need a house</h2>
+          <p class="hero__text">
+            We offer to give a chance to a little and nice puppy with an
+            extremely wide and open heart. He or she will love you more than
+            anybody else in the world, you will see!
+          </p>
+          <button class="hero__button" type="button">Make a friend</button>
+        </div>
+        <div class="hero__image-block">
+          <img
+            src="../../assets/images/hero-puppy.png"
+            alt="Photo of an adorable puppy"
+            class="hero__image"
+          />
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
