@@ -240,7 +240,13 @@ body {
   padding: 8rem 21.5rem;
 }
 
+.about__image {
+  display: block;
+  max-width: 100%;
+}
+
 .about__text-block {
+  max-width: 43rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
