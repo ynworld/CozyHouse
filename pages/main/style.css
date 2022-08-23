@@ -75,7 +75,7 @@ body {
   color: var(--color-grey-dark-3);
 }
 .button--secondary:hover {
-  border: 2px solid var(--color-primary-light);
+  border-color: var(--color-primary-light);
   background-color: var(--color-primary-light);
 }
 .button--secondary:active {
@@ -242,8 +242,14 @@ body {
   padding: 8rem 4rem 10rem 4rem;
 }
 
+.friends__heading {
+  width: 31rem;
+  text-align: center;
+}
+
 .friends__cards-block {
   display: flex;
+  align-items: center;
   gap: 5.3rem;
 }
 
@@ -261,4 +267,33 @@ body {
   border-radius: 1rem;
   overflow: hidden;
   padding-bottom: 3rem;
+  cursor: pointer;
+}
+
+.friends__card:hover .button {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+.arrow {
+  width: 5.2rem;
+  height: 5.2rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.arrow:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+.arrow__text {
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--color-grey-dark-3);
 }
