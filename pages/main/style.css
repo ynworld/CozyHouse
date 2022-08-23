@@ -58,6 +58,19 @@ body {
   cursor: pointer;
   transition: all 0.2s;
 }
+
+.button--round:link,
+.button--round:visited {
+  width: 5.2rem;
+  height: 5.2rem;
+  font-family: var(--font-text);
+  padding: 0;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button--primary:link,
 .button--primary:visited {
   background-color: var(--color-primary);
@@ -80,6 +93,16 @@ body {
 }
 .button--secondary:active {
   transform:translateY(2px);
+}
+
+.button--inactive:link,
+.button--inactive:visited,
+.button--inactive:hover,
+.button--inactive:active {
+  cursor:default;
+  background-color: transparent;
+  border-color: var(--color-grey-light-2);
+  color: var(--color-grey-light-2);
 }
 
 /* Typography */
@@ -232,7 +255,6 @@ body {
 }
 
 /* SECTION FRIENDS */
-
 .friends {
   background-color: var(--color-grey-light-3);
   display: flex;
@@ -241,23 +263,19 @@ body {
   gap: 6rem;
   padding: 8rem 4rem 10rem 4rem;
 }
-
 .friends__heading {
   width: 31rem;
   text-align: center;
 }
-
 .friends__cards-block {
   display: flex;
   align-items: center;
   gap: 5.3rem;
 }
-
 .friends__cards {
   display: flex;
   gap: 9rem;
 }
-
 .friends__card {
   display: flex;
   flex-direction: column;
@@ -269,31 +287,7 @@ body {
   padding-bottom: 3rem;
   cursor: pointer;
 }
-
 .friends__card:hover .button {
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
-}
-
-.arrow {
-  width: 5.2rem;
-  height: 5.2rem;
-  border: 2px solid var(--color-primary);
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.arrow:hover {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary-light);
-}
-
-.arrow__text {
-  font-size: 1.8rem;
-  line-height: 1;
-  color: var(--color-grey-dark-3);
 }
