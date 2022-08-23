@@ -291,3 +291,36 @@ body {
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
 }
+
+/* SECTION HELP */
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  padding: 8rem 4rem 10rem 4rem;
+}
+.help__heading {
+  width: 30rem;
+  text-align: center;
+}
+.help__icons {
+  width: 100rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rem;
+  row-gap: 5.5rem;
+  justify-content: center;
+}
+.help__icon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  align-items: center;
+}
+.help__icon {
+  height: 6rem;
+  width: 6rem;
+  fill: var(--color-primary);
+}
