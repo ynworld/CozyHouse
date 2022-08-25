@@ -307,6 +307,7 @@ body {
   border-radius: 1rem;
   overflow: hidden;
   padding-bottom: 3rem;
+  transition: all 0.2s;
 }
 .friends__card:hover {
   box-shadow: 0 5px 10px rgba(0,0,0,0.05);
@@ -315,6 +316,9 @@ body {
 .friends__card:hover .button {
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
+}
+.arrow {
+  width: 2.4rem;
 }
 
 /* SECTION HELP */
