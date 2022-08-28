@@ -24,6 +24,7 @@ html {
 
   --color-primary: #f1cdb3;
   --color-primary-light: #fddcc4;
+  --color-light: #fff;
   --color-grey-light-1: #fafafa;
   --color-grey-light-2: #cdcdcd;
   --color-grey-light-3: #f6f6f6;
@@ -441,4 +442,52 @@ body {
   font-style: italic;
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+/* FOOTER */
+.footer {
+  background: url(../../assets/images/footer-background.png);
+  display: flex;
+  align-items: flex-start;
+  gap: 16rem;
+  padding: 6rem 4rem 0 4rem;
+}
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer__heading {
+  width: 27rem;
+  color: var(--color-light);
+}
+.footer__link:link,
+.footer__link:visited {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-decoration: none;
+  color: var(--color-primary);
+  font-family: var(--font-main);
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+.footer__link:hover {
+  color: var(--color-light);
+}
+.footer__link:hover .footer__icon {
+  fill: var(--color-light);
+}
+.footer__link:active {
+  transform: translateY(2px);
+}
+.footer__icon {
+  flex-shrink: 0;
+  width: 4rem;
+  height: 4rem;
+  fill: var(--color-primary);
+  transition: all 0.2s;
+}
+.footer__image {
+  display: block;
 }
