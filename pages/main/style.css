@@ -313,6 +313,7 @@ body {
 
 .friends__card:hover {
   box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+  transform: translateY(-2px);
 }
 
 .friends__card:hover .button {
