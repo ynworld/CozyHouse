@@ -310,6 +310,7 @@ body {
   padding-bottom: 3rem;
   transition: all 0.2s;
 }
+
 .friends__card:hover {
   box-shadow: 0 5px 10px rgba(0,0,0,0.05);
 }
