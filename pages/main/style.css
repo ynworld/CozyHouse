@@ -77,9 +77,11 @@ body {
 .button--primary:visited {
   background-color: var(--color-primary);
 }
+
 .button--primary:hover {
   background-color: var(--color-primary-light);
 }
+
 .button--primary:active {
   transform:translateY(2px);
 }
@@ -136,6 +138,7 @@ body {
 .heading-4 {
   font-size: 2rem;
 }
+
 .heading-5 {
   font-size: 1.5rem;
 }
@@ -378,20 +381,24 @@ body {
   gap: 3rem;
   padding: 8rem 4rem 10rem 4rem;
 }
+
 .donate__image {
   display: block;
   max-width: 100%;
 }
+
 .donate__text-block {
   width: 38rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+
 .donate__heading {
   width: 30rem;
   letter-spacing: 0.1em;
 }
+
 .donate__credit-card:link,
 .donate__credit-card:visited {
   display: block;
@@ -406,15 +413,19 @@ body {
   gap: 2rem;
   transition: all 0.2s;
 }
+
 .donate__credit-card:hover {
   background-color: var(--color-primary-light);
 }
+
 .donate__credit-card:active {
   transform: translateY(2px);
 }
+
 .donate__credit-card__icon {
   width: 3rem;
 }
+
 .donate__credit-card__number {
   color: var(--color-grey-dark-1);
   font-size: 2rem;
@@ -422,6 +433,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.12em;
 }
+
 .donate__text {
   color: var(--color-grey-dark-4);
   font-family: var(--font-text);
