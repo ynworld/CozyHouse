@@ -24,7 +24,7 @@ html {
 
   --color-primary: #f1cdb3;
   --color-primary-light: #fddcc4;
-  --color-light: #fff;
+  --color-white: #fff;
   --color-grey-light-1: #fafafa;
   --color-grey-light-2: #cdcdcd;
   --color-grey-light-3: #f6f6f6;
@@ -452,15 +452,18 @@ body {
   gap: 16rem;
   padding: 6rem 4rem 0 4rem;
 }
+
 .footer__block {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
+
 .footer__heading {
   width: 27rem;
-  color: var(--color-light);
+  color: var(--color-white);
 }
+
 .footer__link:link,
 .footer__link:visited {
   display: flex;
@@ -472,22 +475,27 @@ body {
   font-size: 2rem;
   transition: all 0.2s;
 }
+
 .footer__link:hover {
-  color: var(--color-light);
+  color: var(--color-white);
 }
+
 .footer__link:hover .footer__icon {
-  fill: var(--color-light);
+  fill: var(--color-white);
 }
+
 .footer__link:active {
   transform: translateY(2px);
 }
+
 .footer__icon {
-  flex-shrink: 0;
+  flex: none;
   width: 4rem;
   height: 4rem;
   fill: var(--color-primary);
   transition: all 0.2s;
 }
+
 .footer__image {
   display: block;
 }
