@@ -448,7 +448,8 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 16rem;
-  padding: 6rem 4rem 0 4rem;
+  padding: 4rem;
+  padding-bottom: 0;
 }
 
 .footer__block {
