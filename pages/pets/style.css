@@ -1,4 +1,115 @@
-/* Set default font-size to 10px */
-html {
-  font-size: 62.5%;
+/* HEADER */
+.header {
+  /* max-width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 4rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo:link,
+.logo:visited {
+  text-decoration: none;
+}
+
+.logo__title {
+  margin: 0;
+  line-height: 1.1;
+  font-size: 3.2rem;
+  color: var(--color-primary);
+}
+
+.logo__sub-title {
+  font-family: var(--font-text);
+  font-size: 1.2rem;
+  line-height: 1.25;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link:link,
+.nav__link:visited,
+.nav__link--active {
+  padding: .5rem 0;
+  text-decoration: none;
+  color: var(--color-grey-light-2);
+  font-size: 1.5rem;
+  font-family: var(--font-text);
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.nav__link:hover,
+.nav__link:active,
+.nav__link--active {
+  var(--color-grey-light-1);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+/* OUR PETS */
+.friends {
+  background-color: var(--color-grey-light-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  padding: 8rem 4rem 10rem 4rem;
+}
+
+.friends__heading {
+  width: 34rem;
+  text-align: center;
+}
+
+.friends__cards-block {
+  display: flex;
+  align-items: center;
+  gap: 5.3rem;
+}
+
+.friends__cards {
+  display: flex;
+  gap: 9rem;
+}
+
+.friends__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--color-grey-light-1);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding-bottom: 3rem;
+  transition: all 0.2s;
+}
+
+.friends__card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.arrow__icon {
+  width: 2.8rem;
+  stroke: currentColor;
+  stroke-width: 2;
 }
