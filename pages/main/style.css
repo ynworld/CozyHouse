@@ -160,23 +160,6 @@
   gap: 9rem;
 }
 
-.friends__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  background-color: var(--color-grey-light-1);
-  border-radius: 1rem;
-  overflow: hidden;
-  padding-bottom: 3rem;
-  transition: all 0.2s;
-}
-
-.friends__card:hover {
-  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-  transform: translateY(-2px);
-}
-
 .arrow__icon {
   width: 2.8rem;
   stroke: currentColor;

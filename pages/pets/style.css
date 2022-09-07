@@ -66,7 +66,7 @@
 }
 
 /* OUR PETS */
-.friends {
+.pets {
   background-color: var(--color-grey-light-3);
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@
   padding: 8rem 4rem 10rem 4rem;
 }
 
-.friends__heading {
+.pets__heading {
   width: 34rem;
   text-align: center;
 }
@@ -88,24 +88,8 @@
 
 .friends__cards {
   display: flex;
-  gap: 9rem;
-}
-
-.friends__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  background-color: var(--color-grey-light-1);
-  border-radius: 1rem;
-  overflow: hidden;
-  padding-bottom: 3rem;
-  transition: all 0.2s;
-}
-
-.friends__card:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-  transform: translateY(-2px);
+  flex-wrap: wrap;
+  gap: 4rem;
 }
 
 .arrow__icon {
