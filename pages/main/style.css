@@ -322,8 +322,10 @@ body {
   transform: translateY(-2px);
 }
 
-.arrow {
-  width: 2.4rem;
+.arrow__icon {
+  width: 2.8rem;
+  stroke: currentColor;
+  stroke-width: 2;
 }
 
 /* SECTION HELP */
