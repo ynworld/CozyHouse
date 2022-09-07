@@ -15,16 +15,16 @@
   </head>
   <body>
     <header class="header section-container">
-      <a href="#" class="logo">
+      <a href="../main/" class="logo">
         <h1 class="logo__title heading-1">Cozy House</h1>
         <p class="logo__sub-title">Shelter for pets in Boston</p>
       </a>
       <ul class="nav">
         <li class="nav__item">
-          <div class="nav__link--active">About the shelter</div>
+          <a href="../main/" class="nav__link">About the shelter</a>
         </li>
         <li class="nav__item">
-          <a href="../pets/" class="nav__link">Our pets</a>
+          <div class="nav__link--active">Our pets</div>
         </li>
         <li class="nav__item">
           <a href="#" class="nav__link">Help the shelter</a>
@@ -36,8 +36,8 @@
       <h3 class="pets__heading heading-3">
         Our friends who are looking for a home
       </h3>
-      <div class="friends__cards-block">
-        <div class="friends__cards">
+      <div class="pets__cards-block">
+        <div class="pets__cards">
           <div class="friends__card">
             <div class="friends__image-box">
               <img
@@ -144,9 +144,29 @@
           </div>
         </div>
       </div>
-      <a href="../pets/" class="button button--primary" type="button">
-        Get to know the rest
-      </a>
+      <div class="pets__nav">
+        <button
+          disabled
+          class="button button--round button--secondary button--inactive"
+        >
+          <span class="pets__nav__icon"><<</span>
+        </button>
+        <button
+          disabled
+          class="button button--round button--secondary button--inactive"
+        >
+          <span class="pets__nav__icon"><</span>
+        </button>
+        <button type="button" class="button button--round button--active">
+          <span class="pets__nav__icon">1</span>
+        </button>
+        <button type="button" class="button button--round button--secondary">
+          <span class="pets__nav__icon">></span>
+        </button>
+        <button type="button" class="button button--round button--secondary">
+          <span class="pets__nav__icon">>></span>
+        </button>
+      </div>
     </section>
     <footer id="footer" class="footer section-container">
       <div class="footer__block footer__contacts">

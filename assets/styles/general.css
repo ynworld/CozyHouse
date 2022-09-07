@@ -66,7 +66,7 @@ body {
 .button--round {
   width: 5.2rem;
   height: 5.2rem;
-  font-family: var(--font-text);
+  font-family: var(--font-main);
   padding: 0;
   border-radius: 100%;
   display: flex;
@@ -74,6 +74,7 @@ body {
   align-items: center;
 }
 
+.button--primary,
 .button--primary:link,
 .button--primary:visited {
   background-color: var(--color-primary);
@@ -104,6 +105,12 @@ body {
   transform: translateY(2px);
 }
 
+.button--active {
+  cursor: default;
+  background-color: var(--color-primary);
+  transform: none;
+}
+
 .button--inactive,
 .button--inactive:link,
 .button--inactive:visited,
@@ -113,6 +120,7 @@ body {
   background-color: transparent;
   border-color: var(--color-grey-light-2);
   color: var(--color-grey-light-2);
+  transform: none;
 }
 
 /* Typography */

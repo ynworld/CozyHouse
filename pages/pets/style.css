@@ -23,14 +23,14 @@
   margin: 0;
   line-height: 1.1;
   font-size: 3.2rem;
-  color: var(--color-primary);
+  color: var(--color-grey-dark-1);
 }
 
 .logo__sub-title {
   font-family: var(--font-text);
   font-size: 1.2rem;
   line-height: 1.25;
-  color: #fff;
+  color: var(--color-grey-dark-3);
   letter-spacing: 1px;
 }
 
@@ -48,9 +48,9 @@
 .nav__link:link,
 .nav__link:visited,
 .nav__link--active {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   text-decoration: none;
-  color: var(--color-grey-light-2);
+  color: var(--color-grey-dark-1);
   font-size: 1.5rem;
   font-family: var(--font-text);
   border-top: 3px solid transparent;
@@ -61,7 +61,7 @@
 .nav__link:hover,
 .nav__link:active,
 .nav__link--active {
-  var(--color-grey-light-1);
+  color: var(--color-grey-dark-3);
   border-bottom: 3px solid var(--color-primary);
 }
 
@@ -80,20 +80,19 @@
   text-align: center;
 }
 
-.friends__cards-block {
+.pets__cards-block {
   display: flex;
   align-items: center;
   gap: 5.3rem;
 }
 
-.friends__cards {
+.pets__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
 }
 
-.arrow__icon {
-  width: 2.8rem;
-  stroke: currentColor;
-  stroke-width: 2;
+.pets__nav {
+  display: flex;
+  gap: 2rem;
 }
