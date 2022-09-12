@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../../assets/styles/general.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
@@ -14,6 +15,203 @@
     <title>Cozy House | Our Pets</title>
   </head>
   <body>
+    <header class="header section-container">
+      <a href="../main/" class="logo">
+        <h1 class="logo__title heading-1">Cozy House</h1>
+        <p class="logo__sub-title">Shelter for pets in Boston</p>
+      </a>
+      <ul class="nav">
+        <li class="nav__item">
+          <a href="../main/" class="nav__link">About the shelter</a>
+        </li>
+        <li class="nav__item">
+          <div class="nav__link--active">Our pets</div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Help the shelter</a>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+      </ul>
+    </header>
+    <section id="pets" class="pets section-container">
+      <h3 class="pets__heading heading-3">
+        Our friends who are looking for a home
+      </h3>
+      <div class="pets__cards-block">
+        <div class="pets__cards">
+          <div class="friends__card">
+            <div class="friends__image-box">
+              <img
+                src="../../assets/images/pets-katrine.png"
+                alt="Photo of Katrine, the cat"
+                class="friends__image"
+              />
+            </div>
+            <h4 class="friends__name heading-4">Katrine</h4>
+            <a href="#friends" class="button button--secondary">Learn more</a>
+          </div>
+          <div class="friends__card">
+            <div class="friends__image-box">
+              <img
+                src="../../assets/images/pets-jennifer.png"
+                alt="Photo of Jennifer, the puppy"
+                class="friends__image"
+              />
+            </div>
+            <h4 class="friends__name heading-4">Jennifer</h4>
+            <a href="#friends" class="button button--secondary">Learn more</a>
+          </div>
+          <div class="friends__card">
+            <div class="friends__image-box">
+              <img
+                src="../../assets/images/pets-woody.png"
+                alt="Photo of Woody, the golden retriever"
+                class="friends__image"
+              />
+            </div>
+            <h4 class="friends__name heading-4">Woody</h4>
+            <a href="#friends" class="button button--secondary">Learn more</a>
+          </div>
+          <div class="friends__card">
+            <div class="friends__image-box">
+              <img
+                src="../../assets/images/pets-sophia.png"
+                alt="Photo of Sophia, the golden retriever"
+                class="friends__image"
+              />
+            </div>
+            <h4 class="friends__name heading-4">Sophia</h4>
+            <a href="#friends" class="button button--secondary">Learn more</a>
+          </div>
+          <div class="friends__card">
+            <div class="friends__image-box">
+              <img
+                src="../../assets/images/pets-timmy.png"
+                alt="Photo of Katrine, the cat"
+                class="friends__image"
+              />
+            </div>
+            <h4 class="friends__name heading-4">Timmy</h4>
+            <a href="#friends" class="button button--secondary">Learn more</a>
+          </div>
+          <div class="friends__card">
+            <div class="friends__image-box">
+              <img
+                src="../../assets/images/pets-charly.png"
+                alt="Photo of Charly, the puppy"
+                class="friends__image"
+              />
+            </div>
+            <h4 class="friends__name heading-4">Charly</h4>
+            <a href="#friends" class="button button--secondary">Learn more</a>
+          </div>
+          <div class="friends__card">
+            <div class="friends__image-box">
+              <img
+                src="../../assets/images/pets-scarlett.png"
+                alt="Photo of Scarlett, the golden retriever"
+                class="friends__image"
+              />
+            </div>
+            <h4 class="friends__name heading-4">Scarlett</h4>
+            <a href="#friends" class="button button--secondary">Learn more</a>
+          </div>
+          <div class="friends__card">
+            <div class="friends__image-box">
+              <img
+                src="../../assets/images/pets-freddie.png"
+                alt="Photo of Sophia, the golden retriever"
+                class="friends__image"
+              />
+            </div>
+            <h4 class="friends__name heading-4">Freddie</h4>
+            <a href="#friends" class="button button--secondary">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="pets__nav">
+        <button
+          type="button"
+          disabled
+          class="button button--round button--secondary button--inactive"
+        >
+          <span class="pets__nav__icon"><<</span>
+        </button>
+        <button
+          type="button"
+          disabled
+          class="button button--round button--secondary button--inactive"
+        >
+          <span class="pets__nav__icon"><</span>
+        </button>
+        <button type="button" class="button button--round button--active">
+          <span class="pets__nav__icon">1</span>
+        </button>
+        <button type="button" class="button button--round button--secondary">
+          <span class="pets__nav__icon">></span>
+        </button>
+        <button type="button" class="button button--round button--secondary">
+          <span class="pets__nav__icon">>></span>
+        </button>
+      </div>
+    </section>
+    <footer id="footer" class="footer section-container">
+      <div class="footer__block footer__contacts">
+        <h3 class="footer__heading heading-3">For questions and suggestions</h3>
+        <div class="contacts__e-mail">
+          <a href="mailto:puppiesandkittens@cozyhouse.123" class="footer__link">
+            <svg class="footer__icon">
+              <use xlink:href="../../assets/icons/sprite.svg#e-mail"></use>
+            </svg>
+            <span class="contacts__e-mail__address">e-mail@shelter.com</span>
+          </a>
+        </div>
+        <div class="contacts__phone">
+          <a href="tel:+375 44 799-79-04" class="footer__link">
+            <svg class="footer__icon">
+              <use xlink:href="../../assets/icons/sprite.svg#phone"></use>
+            </svg>
+            <span class="contacts__e-mail__address">+375 44 799 79 04</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer__block footer__locations">
+        <h3 class="footer__heading heading-3">We are waiting for your visit</h3>
+        <div class="contacts__e-mail">
+          <a
+            href="https://goo.gl/maps/4RurCFtuvtL6zAUm9"
+            target="_blank"
+            class="footer__link"
+          >
+            <svg class="footer__icon">
+              <use xlink:href="../../assets/icons/sprite.svg#marker"></use>
+            </svg>
+            <span class="footer__address">
+              1 Central Street, Boston<br />(entrance from the store)
+            </span>
+          </a>
+        </div>
+        <div class="contacts__phone">
+          <a
+            href="https://goo.gl/maps/uu1CLqAsHPNbH5318"
+            target="_blank"
+            class="footer__link"
+          >
+            <svg class="footer__icon">
+              <use xlink:href="../../assets/icons/sprite.svg#marker"></use>
+            </svg>
+            <span class="footer__address">18 South Park, London</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer__image-block">
+        <img
+          src="../../assets/images/footer-puppy.png"
+          alt="Puppy giving you a high-five"
+          class="footer__image"
+        />
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
