@@ -24,6 +24,7 @@ html {
 
   --color-primary: #f1cdb3;
   --color-primary-light: #fddcc4;
+  --color-white: #fff;
   --color-grey-light-1: #fafafa;
   --color-grey-light-2: #cdcdcd;
   --color-grey-light-3: #f6f6f6;
@@ -132,7 +133,7 @@ body {
 .heading-3 {
   font-size: 3.5rem;
   line-height: 1.3;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
 }
 
 .heading-4 {
@@ -278,7 +279,6 @@ body {
 
 .about__heading {
   color: var(--color-grey-dark-1);
-  letter-spacing: 1px;
   width: 31rem;
 }
 
@@ -395,8 +395,7 @@ body {
 }
 
 .donate__heading {
-  width: 30rem;
-  letter-spacing: 0.1em;
+  width: 28rem;
 }
 
 .donate__credit-card:link,
@@ -441,4 +440,61 @@ body {
   font-style: italic;
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+/* FOOTER */
+.footer {
+  background: url(../../assets/images/footer-background.png);
+  display: flex;
+  align-items: flex-start;
+  gap: 16rem;
+  padding: 4rem;
+  padding-bottom: 0;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer__heading {
+  width: 27rem;
+  color: var(--color-white);
+}
+
+.footer__link:link,
+.footer__link:visited {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-decoration: none;
+  color: var(--color-primary);
+  font-family: var(--font-main);
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+
+.footer__link:hover {
+  color: var(--color-white);
+}
+
+.footer__link:hover .footer__icon {
+  fill: var(--color-white);
+}
+
+.footer__link:active {
+  transform: translateY(2px);
+}
+
+.footer__icon {
+  flex: none;
+  width: 4rem;
+  height: 4rem;
+  fill: var(--color-primary);
+  transition: all 0.2s;
+}
+
+.footer__image {
+  display: block;
 }
