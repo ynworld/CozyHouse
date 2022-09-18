@@ -272,3 +272,69 @@
   font-size: 1.2rem;
   line-height: 1.5;
 }
+
+/* 48em (768px) MEDIA QUERIES */
+@media only screen and (max-width: 48em) {
+  /* SECTION HERO */
+  .header {
+    padding: 3rem;
+  }
+
+  .hero {
+    background: url(../../assets/images/start-screen-background-768.jpg);
+  }
+
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__image {
+    max-width: 80%;
+  }
+
+  /* SECTION ABOUT */
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8rem;
+    padding: 8rem 16.5rem;
+  }
+  
+  /* SECTION FRIENDS */
+  .friends__cards-block {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  .friends__cards {
+    gap: 4rem;
+  }
+  
+  .friends__card--3 {
+    display: none;
+  }
+  
+  /* SECTION HELP */
+  .help__icons {
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8rem;
+    row-gap: 8rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* SECTION HELP */
+  .donate {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 8rem 4rem 10rem 4rem;
+  }
+}

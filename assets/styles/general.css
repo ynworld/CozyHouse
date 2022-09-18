@@ -18,9 +18,9 @@ html {
 /* VARIABLES */
 :root {
   /* Replaces Georgia */
-  --font-main: 'Tinos', serif;
+  --font-main: "Tinos", serif;
   /* Replaces Arial */
-  --font-text: 'PT Sans', sans-serif;
+  --font-text: "PT Sans", sans-serif;
 
   --color-primary: #f1cdb3;
   --color-primary-light: #fddcc4;
@@ -186,6 +186,11 @@ body {
   padding-bottom: 0;
 }
 
+.footer__nav {
+  display: flex;
+  gap: 16rem;
+}
+
 .footer__block {
   display: flex;
   flex-direction: column;
@@ -231,4 +236,21 @@ body {
 
 .footer__image {
   display: block;
+}
+
+/* 48em (768px) MEDIA QUERIES */
+@media only screen and (max-width: 48em) {
+  .footer {
+    background: url(../../assets/images/footer-background-768.png);
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    padding: 4rem;
+    padding-bottom: 0;
+  }
+
+  .footer__nav {
+    display: flex;
+    gap: 8rem;
+  }
 }
