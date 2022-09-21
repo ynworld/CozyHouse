@@ -241,9 +241,8 @@ body {
 }
 
 /* 75em (1200px) MEDIA QUERIES */
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 75em) {
   .footer {
-    background: url(../../assets/images/footer-background-768.png);
     flex-direction: column;
     align-items: center;
     gap: 8rem;
