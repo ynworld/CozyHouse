@@ -240,7 +240,7 @@ body {
   display: block;
 }
 
-/* 48em (768px) MEDIA QUERIES */
+/* 75em (1200px) MEDIA QUERIES */
 @media only screen and (max-width: 48em) {
   .footer {
     background: url(../../assets/images/footer-background-768.png);
@@ -255,4 +255,8 @@ body {
     display: flex;
     gap: 8rem;
   }
+}
+
+/* 48em (768px) MEDIA QUERIES */
+@media only screen and (max-width: 48em) {
 }
