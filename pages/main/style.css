@@ -273,6 +273,30 @@
   line-height: 1.5;
 }
 
+/* 75em (1200px) MEDIA QUERIES */
+@media only screen and (max-width: 75em) {
+  
+  /* SECTION ABOUT */
+  .about__image {
+    width: 22rem;
+  }
+
+  /* SECTION FRIENDS */
+  .friends__cards-block {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  .friends__cards {
+    gap: 4rem;
+  }
+  
+  .friends__card--3 {
+    display: none;
+  }
+}
+
 /* 48em (768px) MEDIA QUERIES */
 @media only screen and (max-width: 48em) {
   /* SECTION HERO */
@@ -300,21 +324,6 @@
     flex-direction: column-reverse;
     gap: 8rem;
     padding: 8rem 16.5rem;
-  }
-  
-  /* SECTION FRIENDS */
-  .friends__cards-block {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-  }
-  
-  .friends__cards {
-    gap: 4rem;
-  }
-  
-  .friends__card--3 {
-    display: none;
   }
   
   /* SECTION HELP */
