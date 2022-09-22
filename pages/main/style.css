@@ -295,6 +295,12 @@
   .friends__card--3 {
     display: none;
   }
+
+  /* SECTION HELP */
+  .help__icons {
+    column-gap: 10rem;
+    row-gap: 4.5rem;
+  }
 }
 
 /* 48em (768px) MEDIA QUERIES */
