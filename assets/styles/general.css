@@ -260,6 +260,12 @@ body {
   }
 }
 
+/* 55em (8800px) MEDIA QUERIES */
+@media only screen and (max-width: 55em) {
+  html {
+    font-size: 50%;
+  }
+
 /* 48em (768px) MEDIA QUERIES */
 @media only screen and (max-width: 48em) {
 }

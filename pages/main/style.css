@@ -277,7 +277,6 @@
 
 /* 75em (1200px) MEDIA QUERIES */
 @media only screen and (max-width: 75em) {
-  
   /* SECTION ABOUT */
   .about__image {
     width: 22rem;
@@ -307,6 +306,7 @@
 
 /* 62.5em (100px) MEDIA QUERIES */
 @media only screen and (max-width: 62.5em) {
+/* SECTION HERO */
   .hero__container {
     gap: 6rem;
   }
@@ -314,6 +314,30 @@
   .hero__text-block {
     max-width: 40rem;
     padding-bottom: 2rem;
+  }
+
+   /* SECTION ABOUT */
+   .about {
+    gap: 10rem;
+    padding: 8rem 18rem;
+  }
+
+  .donate__credit-card__number {
+    font-size: 1.8rem;
+  }
+}
+
+/* 55em (8800px) MEDIA QUERIES */
+@media only screen and (max-width: 55em) {
+   /* SECTION ABOUT */
+   .about {
+     gap: 10rem;
+     padding: 8rem 14rem;
+    }
+    
+    /* SECTION DONATE */
+  .donate__credit-card__number {
+    font-size: 1.5rem;
   }
 }
 
