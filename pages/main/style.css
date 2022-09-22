@@ -305,6 +305,18 @@
   }
 }
 
+/* 62.5em (100px) MEDIA QUERIES */
+@media only screen and (max-width: 62.5em) {
+  .hero__container {
+    gap: 6rem;
+  }
+
+  .hero__text-block {
+    max-width: 40rem;
+    padding-bottom: 2rem;
+  }
+}
+
 /* 48em (768px) MEDIA QUERIES */
 @media only screen and (max-width: 48em) {
   /* SECTION HERO */
@@ -322,8 +334,10 @@
     align-items: center;
   }
 
-  .hero__image {
-    max-width: 80%;
+  .hero__image-block {
+    align-self: flex-end;
+    max-width: 75%;
+    padding-right: 3rem;
   }
 
   /* SECTION ABOUT */
