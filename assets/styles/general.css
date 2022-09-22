@@ -240,8 +240,8 @@ body {
   display: block;
 }
 
-/* 75em (1200px) MEDIA QUERIES */
-@media only screen and (max-width: 75em) {
+/* 80em (1280px) MEDIA QUERIES */
+@media only screen and (max-width: 80em) {
   html {
     font-size: 56.25%;
   }
