@@ -370,6 +370,7 @@
     padding: 8rem 18rem;
   }
 
+  /* SECTION DONATE */
   .donate__credit-card__number {
     font-size: 1.8rem;
   }
@@ -514,5 +515,27 @@
   .friends__buttons--mobile {
     display: flex;
     gap: 6rem;
+  }
+
+  /* SECTION HELP */
+  .help__icon-block {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .help__icon {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .help__title {
+    font-size: 1.8rem;
+  }
+
+  .help__icons {
+    width: 30rem;
+    column-gap: 4rem;
+    row-gap: 4rem;
+    justify-content: flex-start;
   }
 }
