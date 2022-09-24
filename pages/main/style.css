@@ -430,6 +430,7 @@
     padding: 8rem 16.5rem;
   }
 
+  <<<<<<< HEAD
   /* SECTION FRIENDS */
   .friends__cards-block {
     gap: 3rem;
@@ -439,6 +440,8 @@
     display: none;
   }
 
+  =======
+>>>>>>> f211471 (feat: add mobile media query, hide menu)
   /* SECTION HELP */
   .help__icons {
     width: 60rem;
@@ -450,11 +453,13 @@
     align-items: center;
   }
 
-  .help__icon-block {
+  <<<<<<< HEAD .help__icon-block {
     width: 14rem;
     height: 14rem;
   }
 
+  =======
+>>>>>>> f211471 (feat: add mobile media query, hide menu)
   /* SECTION HELP */
   .donate {
     display: flex;
