@@ -383,11 +383,13 @@
     align-items: center;
   }
 
-  .help__icon-block {
+  <<<<<<< HEAD .help__icon-block {
     width: 14rem;
     height: 14rem;
   }
 
+  =======
+>>>>>>> f211471 (feat: add mobile media query, hide menu)
   /* SECTION HELP */
   .donate {
     display: flex;
@@ -397,4 +399,31 @@
     gap: 3rem;
     padding: 8rem 4rem 10rem 4rem;
   }
+}
+
+/* 35em (560px) MEDIA QUERIES */
+@media only screen and (max-width: 35em) {
+  .header {
+    top: 0rem;
+    right: 0rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6rem;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /* WHEN MENU OPENS */
+  /* .header {
+    position: fixed;
+    width: 32rem;
+    height: 100%;
+    background: var(--color-grey-dark-3);
+  } */
 }
