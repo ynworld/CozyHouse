@@ -330,7 +330,7 @@
   .friends__cards-block {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1.4rem;
   }
 
   .friends__cards {
@@ -348,7 +348,7 @@
   }
 }
 
-/* 62.5em (100px) MEDIA QUERIES */
+/* 62.5em (1000px) MEDIA QUERIES */
 @media only screen and (max-width: 62.5em) {
   /* SECTION HERO */
   .hero__container {
@@ -371,7 +371,7 @@
   }
 }
 
-/* 55em (8800px) MEDIA QUERIES */
+/* 55em (880px) MEDIA QUERIES */
 @media only screen and (max-width: 55em) {
   /* SECTION ABOUT */
   .about {
@@ -379,7 +379,18 @@
     padding: 8rem 14rem;
   }
 
+  /* SECTION FRIENDS */
+  .friends {
+    gap: 4rem;
+    padding: 6rem 3rem;
+  }
+
   /* SECTION DONATE */
+  .donate {
+    gap: 4rem;
+    padding: 6rem 3rem;
+  }
+
   .donate__credit-card__number {
     font-size: 1.5rem;
   }
@@ -414,6 +425,15 @@
     flex-direction: column-reverse;
     gap: 8rem;
     padding: 8rem 16.5rem;
+  }
+
+  /* SECTION FRIENDS */
+  .friends__cards-block {
+    gap: 3rem;
+  }
+
+  .friends__card--2 {
+    display: none;
   }
 
   /* SECTION HELP */

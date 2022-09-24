@@ -260,7 +260,7 @@ body {
   }
 }
 
-/* 55em (8800px) MEDIA QUERIES */
+/* 55em (880px) MEDIA QUERIES */
 @media only screen and (max-width: 55em) {
   html {
     font-size: 50%;
@@ -269,4 +269,30 @@ body {
 
 /* 48em (768px) MEDIA QUERIES */
 @media only screen and (max-width: 48em) {
+}
+
+/* 35em (560px) MEDIA QUERIES */
+@media only screen and (max-width: 35em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    padding: 4rem;
+    padding-bottom: 0;
+  }
+
+  .footer__heading {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
 }
