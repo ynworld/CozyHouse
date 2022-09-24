@@ -296,7 +296,11 @@ body {
 
   .footer__heading {
     width: 100%;
-    font-size: 3rem;
+    font-size: 2.8rem;
+  }
+
+  .footer__block {
+    gap: 3rem;
   }
 
   .footer__nav {
