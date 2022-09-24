@@ -209,6 +209,10 @@
   stroke-width: 2;
 }
 
+.friends__buttons--mobile {
+  display: none;
+}
+
 /* SECTION HELP */
 .help {
   display: flex;
@@ -494,4 +498,21 @@
     height: 100%;
     background: var(--color-grey-dark-3);
   } */
+}
+
+/* 26.25em (420px) MEDIA QUERIES */
+@media only screen and (max-width: 26.25em) {
+  /* FRIENDS ARROW BUTTONS FOR MOBILE */
+  .friends__cards-block {
+    flex-direction: column;
+  }
+
+  .friends__button--desktop {
+    display: none;
+  }
+
+  .friends__buttons--mobile {
+    display: flex;
+    gap: 6rem;
+  }
 }
