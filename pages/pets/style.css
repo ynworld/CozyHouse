@@ -1,3 +1,44 @@
+/* MOBILE NAV */
+.navigation__icon-block {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+
+.navigation__icon-block:hover {
+  cursor: pointer;
+}
+
+.navigation__icon {
+  position: relative;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  width: 4rem;
+  height: 2px;
+  background-color: var(--color-grey-dark-1);
+  display: inline-block;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0rem;
+}
+
+.navigation__icon::before {
+  top: -1rem;
+}
+
+.navigation__icon::after {
+  top: 1rem;
+}
+/* END MOBILE NAV */
+
 /* HEADER */
 .header {
   /* max-width: 100%; */
@@ -103,4 +144,52 @@
   .friends__card:nth-child(n + 7) {
     display: none;
   }
+}
+
+/* 48em (768px) MEDIA QUERIES */
+@media only screen and (max-width: 48em) {
+  .header {
+    padding: 3rem;
+  }
+
+  .pets__cards {
+    flex-direction: column;
+  }
+
+  .friends__card--4,
+  .friends__card--5,
+  .friends__card--6 {
+    display: none;
+  }
+}
+
+/* 35em (560px) MEDIA QUERIES */
+@media only screen and (max-width: 35em) {
+  .header {
+    top: 0rem;
+    right: 0rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6rem;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .navigation__icon-block {
+    display: block;
+  }
+
+  /* WHEN MENU OPENS */
+  /* .header {
+    position: fixed;
+    width: 32rem;
+    height: 100%;
+    background: var(--color-grey-dark-3);
+  } */
 }
