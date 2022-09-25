@@ -100,8 +100,7 @@
 
 /* 80em (1280px) MEDIA QUERIES */
 @media only screen and (max-width: 80em) {
-  .friends__card--7,
-  .friends__card--8 {
+  .friends__card:nth-child(n + 7) {
     display: none;
   }
 }

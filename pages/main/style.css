@@ -54,7 +54,7 @@
 .nav__link:link,
 .nav__link:visited,
 .nav__link--active {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   text-decoration: none;
   color: var(--color-grey-light-2);
   font-size: 1.5rem;
@@ -67,7 +67,7 @@
 .nav__link:hover,
 .nav__link:active,
 .nav__link--active {
-  var(--color-grey-light-1);
+  color: var(--color-grey-light-1);
   border-bottom: 3px solid var(--color-primary);
 }
 
@@ -288,12 +288,12 @@
     align-items: center;
     gap: 1.2rem;
   }
-  
+
   .friends__cards {
     gap: 4rem;
   }
-  
-  .friends__card--3 {
+
+  .friends__card:nth-child(n + 3) {
     display: none;
   }
 
@@ -306,7 +306,7 @@
 
 /* 62.5em (100px) MEDIA QUERIES */
 @media only screen and (max-width: 62.5em) {
-/* SECTION HERO */
+  /* SECTION HERO */
   .hero__container {
     gap: 6rem;
   }
@@ -316,8 +316,8 @@
     padding-bottom: 2rem;
   }
 
-   /* SECTION ABOUT */
-   .about {
+  /* SECTION ABOUT */
+  .about {
     gap: 10rem;
     padding: 8rem 18rem;
   }
@@ -329,13 +329,13 @@
 
 /* 55em (8800px) MEDIA QUERIES */
 @media only screen and (max-width: 55em) {
-   /* SECTION ABOUT */
-   .about {
-     gap: 10rem;
-     padding: 8rem 14rem;
-    }
-    
-    /* SECTION DONATE */
+  /* SECTION ABOUT */
+  .about {
+    gap: 10rem;
+    padding: 8rem 14rem;
+  }
+
+  /* SECTION DONATE */
   .donate__credit-card__number {
     font-size: 1.5rem;
   }
@@ -371,7 +371,7 @@
     gap: 8rem;
     padding: 8rem 16.5rem;
   }
-  
+
   /* SECTION HELP */
   .help__icons {
     width: 60rem;
@@ -382,7 +382,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   /* SECTION HELP */
   .donate {
     display: flex;
