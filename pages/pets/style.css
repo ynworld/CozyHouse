@@ -156,9 +156,7 @@
     flex-direction: column;
   }
 
-  .friends__card--4,
-  .friends__card--5,
-  .friends__card--6 {
+  .friends__card:nth-child(n + 4) {
     display: none;
   }
 }
