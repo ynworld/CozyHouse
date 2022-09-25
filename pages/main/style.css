@@ -383,6 +383,11 @@
     align-items: center;
   }
 
+  .help__icon-block {
+    width: 14rem;
+    height: 14rem;
+  }
+
   /* SECTION HELP */
   .donate {
     display: flex;
