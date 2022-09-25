@@ -18,9 +18,9 @@ html {
 /* VARIABLES */
 :root {
   /* Replaces Georgia */
-  --font-main: 'Tinos', serif;
+  --font-main: "Tinos", serif;
   /* Replaces Arial */
-  --font-text: 'PT Sans', sans-serif;
+  --font-text: "PT Sans", sans-serif;
 
   --color-primary: #f1cdb3;
   --color-primary-light: #fddcc4;
@@ -178,12 +178,19 @@ body {
 
 /* FOOTER */
 .footer {
-  background: url(../../assets/images/footer-background.png);
+  background: url(../images/noise_transparent@2x.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
+      #211f20;
   display: flex;
   align-items: flex-start;
   gap: 16rem;
   padding: 4rem;
   padding-bottom: 0;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 16rem;
 }
 
 .footer__block {
@@ -231,4 +238,34 @@ body {
 
 .footer__image {
   display: block;
+}
+
+/* 80em (1280px) MEDIA QUERIES */
+@media only screen and (max-width: 80em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    padding: 4rem;
+    padding-bottom: 0;
+  }
+
+  .footer__nav {
+    display: flex;
+    gap: 8rem;
+  }
+}
+
+/* 55em (8800px) MEDIA QUERIES */
+@media only screen and (max-width: 55em) {
+  html {
+    font-size: 50%;
+  }
+
+/* 48em (768px) MEDIA QUERIES */
+@media only screen and (max-width: 48em) {
 }

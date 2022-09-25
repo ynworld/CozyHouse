@@ -1,6 +1,8 @@
 /* SECTION HERO */
 .hero {
-  background: url(../../assets/images/start-screen-background.jpg);
+  background: url(../images/noise_transparent@2x.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
+      #211f20;
 }
 
 .header {
@@ -52,7 +54,7 @@
 .nav__link:link,
 .nav__link:visited,
 .nav__link--active {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   text-decoration: none;
   color: var(--color-grey-light-2);
   font-size: 1.5rem;
@@ -65,7 +67,7 @@
 .nav__link:hover,
 .nav__link:active,
 .nav__link--active {
-  var(--color-grey-light-1);
+  color: var(--color-grey-light-1);
   border-bottom: 3px solid var(--color-primary);
 }
 
@@ -271,4 +273,128 @@
   font-style: italic;
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+/* 80em (1200px) MEDIA QUERIES */
+@media only screen and (max-width: 80em) {
+  /* SECTION ABOUT */
+  .about__image {
+    width: 22rem;
+  }
+
+  /* SECTION FRIENDS */
+  .friends__cards-block {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .friends__cards {
+    gap: 4rem;
+  }
+
+  .friends__card:nth-child(n + 3) {
+    display: none;
+  }
+
+  /* SECTION HELP */
+  .help__icons {
+    column-gap: 10rem;
+    row-gap: 4.5rem;
+  }
+}
+
+/* 62.5em (100px) MEDIA QUERIES */
+@media only screen and (max-width: 62.5em) {
+  /* SECTION HERO */
+  .hero__container {
+    gap: 6rem;
+  }
+
+  .hero__text-block {
+    max-width: 40rem;
+    padding-bottom: 2rem;
+  }
+
+  /* SECTION ABOUT */
+  .about {
+    gap: 10rem;
+    padding: 8rem 18rem;
+  }
+
+  .donate__credit-card__number {
+    font-size: 1.8rem;
+  }
+}
+
+/* 55em (8800px) MEDIA QUERIES */
+@media only screen and (max-width: 55em) {
+  /* SECTION ABOUT */
+  .about {
+    gap: 10rem;
+    padding: 8rem 14rem;
+  }
+
+  /* SECTION DONATE */
+  .donate__credit-card__number {
+    font-size: 1.5rem;
+  }
+}
+
+/* 48em (768px) MEDIA QUERIES */
+@media only screen and (max-width: 48em) {
+  /* SECTION HERO */
+  .header {
+    padding: 3rem;
+  }
+
+  .hero {
+    background: url(../../assets/images/start-screen-background-768.jpg);
+  }
+
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__image-block {
+    align-self: flex-end;
+    max-width: 75%;
+    padding-right: 3rem;
+  }
+
+  /* SECTION ABOUT */
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8rem;
+    padding: 8rem 16.5rem;
+  }
+
+  /* SECTION HELP */
+  .help__icons {
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8rem;
+    row-gap: 8rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .help__icon-block {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  /* SECTION HELP */
+  .donate {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 8rem 4rem 10rem 4rem;
+  }
 }

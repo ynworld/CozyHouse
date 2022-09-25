@@ -89,10 +89,18 @@
 .pets__cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 4rem;
 }
 
 .pets__nav {
   display: flex;
   gap: 2rem;
+}
+
+/* 80em (1280px) MEDIA QUERIES */
+@media only screen and (max-width: 80em) {
+  .friends__card:nth-child(n + 7) {
+    display: none;
+  }
 }
