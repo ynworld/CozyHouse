@@ -182,12 +182,4 @@
   .navigation__icon-block {
     display: block;
   }
-
-  /* WHEN MENU OPENS */
-  /* .header {
-    position: fixed;
-    width: 32rem;
-    height: 100%;
-    background: var(--color-grey-dark-3);
-  } */
 }
