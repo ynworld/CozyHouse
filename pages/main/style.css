@@ -1,3 +1,46 @@
+/* MOBILE NAV */
+.navigation__icon-block {
+  border: none;
+  background: transparent;
+  display: none;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+
+.navigation__icon-block:hover {
+  cursor: pointer;
+}
+
+.navigation__icon {
+  position: relative;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  width: 4rem;
+  height: 2px;
+  background-color: var(--color-primary);
+  display: inline-block;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0rem;
+}
+
+.navigation__icon::before {
+  top: -1rem;
+}
+
+.navigation__icon::after {
+  top: 1rem;
+}
+/* END MOBILE NAV */
+
 /* SECTION HERO */
 .hero {
   background: url(../../assets/images/noise_transparent@2x.png),
@@ -39,47 +82,6 @@
   color: #fff;
   letter-spacing: 1px;
 }
-
-/* MOBILE NAV */
-.navigation__icon-block {
-  display: none;
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-}
-
-.navigation__icon-block:hover {
-  cursor: pointer;
-}
-
-.navigation__icon {
-  position: relative;
-}
-
-.navigation__icon,
-.navigation__icon::before,
-.navigation__icon::after {
-  width: 4rem;
-  height: 2px;
-  background-color: var(--color-primary);
-  display: inline-block;
-}
-
-.navigation__icon::before,
-.navigation__icon::after {
-  content: "";
-  position: absolute;
-  left: 0rem;
-}
-
-.navigation__icon::before {
-  top: -1rem;
-}
-
-.navigation__icon::after {
-  top: 1rem;
-}
-/* END MOBILE NAV */
 
 .nav {
   list-style: none;

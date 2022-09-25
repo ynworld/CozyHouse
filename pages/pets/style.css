@@ -1,5 +1,7 @@
 /* MOBILE NAV */
 .navigation__icon-block {
+  border: none;
+  background: transparent;
   display: none;
   position: absolute;
   top: 5rem;
