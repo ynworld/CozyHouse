@@ -1,6 +1,49 @@
+/* MOBILE NAV */
+.navigation__icon-block {
+  border: none;
+  background: transparent;
+  display: none;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+
+.navigation__icon-block:hover {
+  cursor: pointer;
+}
+
+.navigation__icon {
+  position: relative;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  width: 4rem;
+  height: 2px;
+  background-color: var(--color-primary);
+  display: inline-block;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0rem;
+}
+
+.navigation__icon::before {
+  top: -1rem;
+}
+
+.navigation__icon::after {
+  top: 1rem;
+}
+/* END MOBILE NAV */
+
 /* SECTION HERO */
 .hero {
-  background: url(../images/noise_transparent@2x.png),
+  background: url(../../assets/images/noise_transparent@2x.png),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
       #211f20;
 }
@@ -168,6 +211,10 @@
   stroke-width: 2;
 }
 
+.friends__buttons--mobile {
+  display: none;
+}
+
 /* SECTION HELP */
 .help {
   display: flex;
@@ -275,6 +322,9 @@
   line-height: 1.5;
 }
 
+/**************************************************/
+/* MEDIA QUERIES */
+
 /* 80em (1200px) MEDIA QUERIES */
 @media only screen and (max-width: 80em) {
   /* SECTION ABOUT */
@@ -286,7 +336,7 @@
   .friends__cards-block {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1.4rem;
   }
 
   .friends__cards {
@@ -304,7 +354,7 @@
   }
 }
 
-/* 62.5em (100px) MEDIA QUERIES */
+/* 62.5em (1000px) MEDIA QUERIES */
 @media only screen and (max-width: 62.5em) {
   /* SECTION HERO */
   .hero__container {
@@ -322,12 +372,13 @@
     padding: 8rem 18rem;
   }
 
+  /* SECTION DONATE */
   .donate__credit-card__number {
     font-size: 1.8rem;
   }
 }
 
-/* 55em (8800px) MEDIA QUERIES */
+/* 55em (880px) MEDIA QUERIES */
 @media only screen and (max-width: 55em) {
   /* SECTION ABOUT */
   .about {
@@ -335,7 +386,18 @@
     padding: 8rem 14rem;
   }
 
+  /* SECTION FRIENDS */
+  .friends {
+    gap: 4rem;
+    padding: 6rem 3rem;
+  }
+
   /* SECTION DONATE */
+  .donate {
+    gap: 4rem;
+    padding: 6rem 3rem;
+  }
+
   .donate__credit-card__number {
     font-size: 1.5rem;
   }
@@ -346,10 +408,6 @@
   /* SECTION HERO */
   .header {
     padding: 3rem;
-  }
-
-  .hero {
-    background: url(../../assets/images/start-screen-background-768.jpg);
   }
 
   .hero__container {
@@ -370,6 +428,15 @@
     flex-direction: column-reverse;
     gap: 8rem;
     padding: 8rem 16.5rem;
+  }
+
+  /* SECTION FRIENDS */
+  .friends__cards-block {
+    gap: 3rem;
+  }
+
+  .friends__card:nth-child(n + 2) {
+    display: none;
   }
 
   /* SECTION HELP */
@@ -396,5 +463,77 @@
     align-items: center;
     gap: 3rem;
     padding: 8rem 4rem 10rem 4rem;
+  }
+}
+
+/* 35em (560px) MEDIA QUERIES */
+@media only screen and (max-width: 35em) {
+  .header {
+    top: 0rem;
+    right: 0rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6rem;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .navigation__icon-block {
+    display: block;
+  }
+}
+
+/* 26.25em (420px) MEDIA QUERIES */
+@media only screen and (max-width: 26.25em) {
+  .hero__image-block {
+    max-width: 90%;
+    padding-right: 2rem;
+  }
+
+  /* FRIENDS ARROW BUTTONS FOR MOBILE */
+  .friends__cards-block {
+    flex-direction: column;
+  }
+
+  .friends__button--desktop {
+    display: none;
+  }
+
+  .friends__buttons--mobile {
+    display: flex;
+    gap: 6rem;
+  }
+
+  /* SECTION HELP */
+  .help__icon-block {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .help__icon {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .help__title {
+    font-size: 1.8rem;
+  }
+
+  .help__icons {
+    width: 30rem;
+    column-gap: 4rem;
+    row-gap: 4rem;
+    justify-content: flex-start;
+  }
+
+  .donate__heading {
+    width: 100%;
+    text-align: center;
   }
 }
