@@ -448,13 +448,11 @@
     align-items: center;
   }
 
-  <<<<<<< HEAD .help__icon-block {
+  .help__icon-block {
     width: 14rem;
     height: 14rem;
   }
 
-  =======
->>>>>>> f211471 (feat: add mobile media query, hide menu)
   /* SECTION HELP */
   .donate {
     display: flex;
