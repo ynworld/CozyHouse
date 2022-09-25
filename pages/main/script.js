@@ -1,7 +1,7 @@
 const navIcon = document.querySelector(".navigation__icon-block");
 const navigation = document.querySelector(".nav");
 const header = document.querySelector(".header");
-let menuClosed = true;
+let isMenuOpen = true;
 
 navIcon.addEventListener("click", function () {
   if (menuClosed) {
