@@ -1,19 +1,48 @@
 /* MOBILE NAV */
-.navigation__icon-block {
-  border: none;
-  background: transparent;
-  display: none;
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-}
-
-.navigation__icon-block:hover {
-  cursor: pointer;
-}
-
 .navigation__icon {
-  position: relative;
+  display: none;
+}
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__checkbox:checked ~ .nav {
+  display: flex;
+  position: fixed;
+  right: 14rem;
+  top: 5rem;
+  width: 40rem;
+  background-color: #513d2f;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.navigation__button {
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  z-index: 1500;
+}
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  background-color: var(--color-grey-dark-3);
+  z-index: 1000;
+}
+
+.navigation__icon:hover {
+  cursor: pointer;
 }
 
 .navigation__icon,
@@ -22,7 +51,7 @@
   width: 4rem;
   height: 2px;
   background-color: var(--color-primary);
-  display: inline-block;
+  display: block;
 }
 
 .navigation__icon::before,
