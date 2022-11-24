@@ -1,19 +1,10 @@
 /* MOBILE NAV */
-.navigation__icon {
-  display: none;
-}
-
 .navigation__checkbox {
   display: none;
 }
 
 .navigation__checkbox:checked ~ .nav {
   display: flex;
-  position: fixed;
-  right: 14rem;
-  top: 5rem;
-  width: 40rem;
-  background-color: #513d2f;
 }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
@@ -51,7 +42,7 @@
   width: 4rem;
   height: 2px;
   background-color: var(--color-primary);
-  display: block;
+  display: none;
 }
 
 .navigation__icon::before,
@@ -103,6 +94,7 @@
   line-height: 1.1;
   font-size: 3.2rem;
   color: var(--color-primary);
+  z-index: 100;
 }
 
 .logo__sub-title {
@@ -111,6 +103,7 @@
   line-height: 1.25;
   color: #fff;
   letter-spacing: 1px;
+  z-index: 100;
 }
 
 .nav {
@@ -507,25 +500,32 @@
     gap: 6rem;
   }
 
-  .navigation__icon-block {
-    display: block;
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+    display: inline-block;
     transition: all 0.3s;
   }
 
   .nav {
     display: none;
-    width: 100%;
+    width: 35rem;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: var(--color-grey-dark-3);
     transition: all 0.2s;
   }
 
   .nav__link:link,
   .nav__link:visited,
-  .nav__link--active__icon-block {
-    font-size: 2.6rem;
+  .nav__link--active {
+    font-size: 3.6rem;
   }
 }
 
