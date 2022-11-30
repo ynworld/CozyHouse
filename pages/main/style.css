@@ -83,7 +83,7 @@
   line-height: 1.1;
   font-size: 3.2rem;
   color: var(--color-primary);
-  z-index: 100;
+  z-index: 1;
 }
 
 .logo__sub-title {
@@ -92,7 +92,7 @@
   line-height: 1.25;
   color: #fff;
   letter-spacing: 1px;
-  z-index: 100;
+  z-index: 1;
 }
 
 .nav {
