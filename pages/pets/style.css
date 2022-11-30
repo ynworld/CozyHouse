@@ -18,18 +18,7 @@
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  z-index: 1500;
-}
-
-.navigation__background {
-  height: 6rem;
-  width: 6rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 6rem;
-  right: 6rem;
-  background-color: var(--color-grey-dark-3);
-  z-index: 1000;
+  z-index: 1;
 }
 
 .navigation__icon:hover {
